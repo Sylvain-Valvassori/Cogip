@@ -1,0 +1,58 @@
+table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: var(--clr-white);
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.tableHead th {
+  font-family: var(--font-main);
+  font-size: 1.8em;
+  color: var(--clr-white);
+}
+
+table thead {
+  height: 5rem;
+  background: var(--clr-table-th);
+}
+
+tbody {
+  height: 5rem;
+}
+
+table :is(td, th) {
+  text-align: left;
+  padding: 0.8rem;
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--clr-secondary);
+}
+
+tbody tr {
+  font-family: var(--font-main);
+  font-size: 1.5em;
+  color: var(--clr-null);
+  line-height: 1.2;
+  font-weight: unset;
+  cursor: pointer;
+}
+
+tbody tr:hover {
+  color: var(--clr-text-tr-hover);
+  background-color: var(--clr-bg-tr-hover);
+}
+
+.column1, .column2, .column3, .column4, .column5 {
+  padding: 1rem 2rem;
+}
+
+.column1 {
+  padding-left: 4rem;
+}
+
+.column4 {
+  padding-right: 4rem;
+}

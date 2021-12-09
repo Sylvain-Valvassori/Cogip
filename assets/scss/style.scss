@@ -1,0 +1,152 @@
+// * ========================== | Import |  ==========================
+@import "./libs/reset.scss";
+@import "./libs/fonts.scss";
+@import "./libs/tableStyle.scss";  //importation du style pour les tableaux
+
+// * ========================== | Setup Var |  ==========================
+:root{
+    // --clr-main:        rgb(119, 137, 175);
+    --clr-main:        rgb(24, 31, 44);
+    --clr-secondary:   rgb(245, 245, 245);
+    --clr-accent:      rgb(191,138,73);
+    --clr-null:        rgb(128, 128, 128);
+    --clr-white:       rgb(255, 255, 255);
+    --clr-black:       rgb(0, 0, 0);
+    --clr-error:       rgb(209, 30, 30);
+    --clr-success:     rgb(2, 189, 2);
+
+    --clr-table-th:      rgb(22, 135, 187);
+    --clr-table-tr:      rgb(245, 245, 245);
+    --clr-bg-tr-hover:   rgb(209,252,228);
+    --clr-text-tr-hover: rgb(85, 85, 85);
+
+    --font-main: 'OpenSans-Regular';
+    --fontS-error: 1.2em;
+}
+// var(--white-color);
+
+@mixin flex--center { 
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+// @include  flex--center;
+// font-family: var(--font-main);
+
+// * ========================== | Html & Body |  ==========================
+html{
+    background-color: var(--clr-main);
+}
+h2{
+    text-align: center;
+}
+h2, h3{
+    font-size:3rem;
+    color: var(--clr-white);
+    font-family: var(--font-main);
+    margin: 2rem 0;
+}
+// * ========================== | Nav |  ==========================
+
+nav { 
+    display: flex;
+    justify-content: flex-end;
+    padding: 5rem 10rem;
+
+    ul > li {
+        display: inline-block;
+        margin: 0 1rem;
+    }
+    a{
+        font-size: 2rem;
+        font-family: var(--font-main);
+        color: var(--clr-white);
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: var( --clr-table-th);
+    }
+}
+// * ========================== | Form |  ==========================
+
+.formContainer{
+
+    margin: 5rem auto 0;
+    width: fit-content;
+
+    form{
+        position: relative;
+        margin: 3rem 0;
+        h3{
+            font-size: 2rem;
+            margin: 0 0 .5rem 0;
+        }
+
+        input, select{
+            font-size: 1.5rem;
+            font-family: var(--font-main);
+            margin: 0 .2rem;
+            padding: 0 1rem;
+
+            width: 20rem;
+            height: 3rem;
+
+            background-color: var(--clr-secondary);
+            border-radius: .3rem;
+            border: none;
+            outline: none;
+        }
+        
+        input[type=submit]{
+            width: 6rem;
+            height: 3rem;
+            cursor: pointer;
+        }
+    }
+}
+
+.errorInputMsg{
+    position: absolute;
+    transform: translateY(3.5rem) translateX(-20rem);
+    width: fit-content;
+    color:       var(--clr-error);
+    font-size:   var(--fontS-error);
+    font-weight: bold;
+    font-family: var(--font-main);
+}
+.successMessage{
+    margin-left: 0.6rem;
+    color:       var(--clr-success);
+    font-size:   var(--fontS-error);
+    font-weight: bold;
+    font-family: var(--font-main);
+}
+.failedMessage{
+    margin-left: 0.6rem;
+    color:       var(--clr-error);
+    font-size:   var(--fontS-error);
+    font-weight: bold;
+    font-family: var(--font-main);
+}
+// * ========================== | Tables |  ==========================
+
+.tableContainer {
+    margin: 0 auto;
+    width: fit-content;
+    padding: 3.3rem 3rem;
+    
+    p{
+        font-size: 2rem;
+        color: var(--clr-white);
+        font-family: var(--font-main);
+        margin: 1rem 0;
+
+    }
+
+    h3{
+        margin-top: 10rem;
+    }
+}
+  

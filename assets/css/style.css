@@ -1,0 +1,298 @@
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+  /* now 1.5rem = 15px */
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url("../fonts/OpenSans/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Sora-Variable';
+  src: url("../fonts/Sora-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Sora-Bold';
+  src: url("../fonts/static/Sora-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Sora-ExtraBold';
+  src: url("../fonts/static/Sora-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Sora-ExtraLight';
+  src: url("../fonts/static/Sora-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Sora-Light';
+  src: url("../fonts/static/Sora-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Sora-Medium';
+  src: url("../fonts/static/Sora-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Sora-Regular';
+  src: url("../fonts/static/Sora-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Sora-SemiBold';
+  src: url("../fonts/static/Sora-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Sora-Thin';
+  src: url("../fonts/static/Sora-Thin.ttf") format("truetype");
+}
+
+table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: var(--clr-white);
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.tableHead th {
+  font-family: var(--font-main);
+  font-size: 1.8em;
+  color: var(--clr-white);
+}
+
+table thead {
+  height: 5rem;
+  background: var(--clr-table-th);
+}
+
+tbody {
+  height: 5rem;
+}
+
+table :is(td, th) {
+  text-align: left;
+  padding: 0.8rem;
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--clr-secondary);
+}
+
+tbody tr {
+  font-family: var(--font-main);
+  font-size: 1.5em;
+  color: var(--clr-null);
+  line-height: 1.2;
+  font-weight: unset;
+  cursor: pointer;
+}
+
+tbody tr:hover {
+  color: var(--clr-text-tr-hover);
+  background-color: var(--clr-bg-tr-hover);
+}
+
+.column1, .column2, .column3, .column4, .column5 {
+  padding: 1rem 2rem;
+}
+
+.column1 {
+  padding-left: 4rem;
+}
+
+.column4 {
+  padding-right: 4rem;
+}
+
+:root {
+  --clr-main:        rgb(24, 31, 44);
+  --clr-secondary:   rgb(245, 245, 245);
+  --clr-accent:      rgb(191,138,73);
+  --clr-null:        rgb(128, 128, 128);
+  --clr-white:       rgb(255, 255, 255);
+  --clr-black:       rgb(0, 0, 0);
+  --clr-error:       rgb(209, 30, 30);
+  --clr-success:     rgb(2, 189, 2);
+  --clr-table-th:      rgb(22, 135, 187);
+  --clr-table-tr:      rgb(245, 245, 245);
+  --clr-bg-tr-hover:   rgb(209,252,228);
+  --clr-text-tr-hover: rgb(85, 85, 85);
+  --font-main: 'OpenSans-Regular';
+  --fontS-error: 1.2em;
+}
+
+html {
+  background-color: var(--clr-main);
+}
+
+h2 {
+  text-align: center;
+}
+
+h2, h3 {
+  font-size: 3rem;
+  color: var(--clr-white);
+  font-family: var(--font-main);
+  margin: 2rem 0;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 5rem 10rem;
+}
+
+nav ul > li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+nav a {
+  font-size: 2rem;
+  font-family: var(--font-main);
+  color: var(--clr-white);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--clr-table-th);
+}
+
+.formContainer {
+  margin: 5rem auto 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.formContainer form {
+  position: relative;
+  margin: 3rem 0;
+}
+
+.formContainer form h3 {
+  font-size: 2rem;
+  margin: 0 0 .5rem 0;
+}
+
+.formContainer form input, .formContainer form select {
+  font-size: 1.5rem;
+  font-family: var(--font-main);
+  margin: 0 .2rem;
+  padding: 0 1rem;
+  width: 20rem;
+  height: 3rem;
+  background-color: var(--clr-secondary);
+  border-radius: .3rem;
+  border: none;
+  outline: none;
+}
+
+.formContainer form input[type=submit] {
+  width: 6rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.errorInputMsg {
+  position: absolute;
+  -webkit-transform: translateY(3.5rem) translateX(-20rem);
+          transform: translateY(3.5rem) translateX(-20rem);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: var(--clr-error);
+  font-size: var(--fontS-error);
+  font-weight: bold;
+  font-family: var(--font-main);
+}
+
+.successMessage {
+  margin-left: 0.6rem;
+  color: var(--clr-success);
+  font-size: var(--fontS-error);
+  font-weight: bold;
+  font-family: var(--font-main);
+}
+
+.failedMessage {
+  margin-left: 0.6rem;
+  color: var(--clr-error);
+  font-size: var(--fontS-error);
+  font-weight: bold;
+  font-family: var(--font-main);
+}
+
+.tableContainer {
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 3.3rem 3rem;
+}
+
+.tableContainer p {
+  font-size: 2rem;
+  color: var(--clr-white);
+  font-family: var(--font-main);
+  margin: 1rem 0;
+}
+
+.tableContainer h3 {
+  margin-top: 10rem;
+}
