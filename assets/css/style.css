@@ -103,6 +103,7 @@ table {
   border-radius: 1rem;
   overflow: hidden;
   margin: 0 auto;
+  max-width: 100rem;
 }
 
 .tableHead th {

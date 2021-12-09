@@ -59,7 +59,6 @@ abstract class Model{
         if (preg_match('~[0-9]+~',$lastParam, $matches)) {
                 $id = $matches[0];
         }
-
         return $id;
     }
 
@@ -67,7 +66,11 @@ abstract class Model{
     
     protected function getDataDetailContact($tableName, $objectName, $id){
         $dataTable = [];
-        $req = self::getBdd()->prepare('SELECT * FROM '.$tableName.' LEFT JOIN invoices ON contacts.societyName = invoices.societyName WHERE contacts.id = '.$id);
+        $req = self::getBdd()->prepare('
+            SELECT * FROM '.$tableName.' 
+            LEFT JOIN invoices ON contacts.societyName = invoices.societyName 
+            WHERE contacts.id = '.$id
+        );
         $req->execute();
         while( $data = $req->fetch(PDO::FETCH_ASSOC)){
             $dataTable[] = new $objectName($data);
@@ -81,10 +84,30 @@ abstract class Model{
     protected function getDataDetailSociety($tableName, $objectName, $id){
         $dataTable = [];
         $req = self::getBdd()->prepare('
-        SELECT * FROM '.$tableName.'
-        LEFT JOIN invoices ON societies.name = invoices.societyName
-        LEFT JOIN contacts ON societies.name = contacts.societyName
-        WHERE societies.id =  '.$id);
+            SELECT * FROM '.$tableName.'
+            LEFT JOIN invoices ON societies.name = invoices.societyName
+            LEFT JOIN contacts ON societies.name = contacts.societyName
+            WHERE societies.id =  '.$id
+        );
+        $req->execute();
+        while( $data = $req->fetch(PDO::FETCH_ASSOC)){
+            $dataTable[] = new $objectName($data);
+        }
+        return $dataTable;
+        $req->closeCursor();
+    }
+
+    
+    //* ==========| Récupére les datas de la facture selectionée |==========
+    
+    protected function getDataDetailInvoice($tableName, $objectName, $id){
+        $dataTable = [];
+        $req = self::getBdd()->prepare('
+            SELECT * FROM '.$tableName.'
+            LEFT JOIN societies ON invoices.societyName = societies.name
+            LEFT JOIN contacts  ON invoices.societyName = contacts.societyName
+            WHERE invoices.id = '.$id
+        );
         $req->execute();
         while( $data = $req->fetch(PDO::FETCH_ASSOC)){
             $dataTable[] = new $objectName($data);

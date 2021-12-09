@@ -131,7 +131,13 @@ nav {
     font-family: var(--font-main);
 }
 // * ========================== | Tables |  ==========================
-
+// .tablesContainer{
+//     display: flex;
+// 	flex-wrap: wrap;
+// 	justify-content: center;
+// 	align-items: flex-start;
+// 	align-content: flex-start;
+// }
 .tableContainer {
     margin: 0 auto;
     width: fit-content;
@@ -142,7 +148,6 @@ nav {
         color: var(--clr-white);
         font-family: var(--font-main);
         margin: 1rem 0;
-
     }
 
     h3{

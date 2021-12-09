@@ -4,6 +4,7 @@ $this->_titlePage = 'Detail\'s society';
 
 
 //* ====================| table des contacts |==================== 
+$societyDetailContact = $societyDetailInvoice = '';
 foreach($detailSociety as $detail){
     $societyDetailContact .=
         '<tr>
@@ -25,7 +26,7 @@ foreach($detailSociety as $detail){
 ?>
 
 <!--! ====================| Content |==================== -->
-<h2>Society : <?= $detail->lastName().' '.$detail->firstName(); ?></h2>
+<h2>Society : <?= $detail->name(); ?></h2>
 
 <section class="containerTables">
 
@@ -35,7 +36,7 @@ foreach($detailSociety as $detail){
         <p>Type&ensp;:      &ensp;<span><?= $detail->type(); ?></span></p>
 
         <!--* ====================| table des contacts |==================== -->
-        <h3>The contact persons</h3>
+        <h3>The contact linked to the society</h3>
         <table class="tableContact">
             <thead>
                 <tr class="tableHead">

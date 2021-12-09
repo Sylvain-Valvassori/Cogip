@@ -1,12 +1,12 @@
 <?php
 // on va récupérer  toutes les données de manière sécurisé, on va les Hydrater
 
-class DetailContact extends contact{
+class DetailContact extends Contact{
     
     private $_numbers;
     private $_dates;
     
-    //* ==========| Setters, les installeurs |==========
+    // //* ==========| Setters, les installeurs |==========
    
         //* ==========| Invoice Infos |==========
         public function setNumbers($numbers){
@@ -23,4 +23,8 @@ class DetailContact extends contact{
         //* ==========| Invoice Infos |==========
         public function numbers() { return $this->_numbers; }
         public function dates()   { return $this->_dates;   }
+
+
+
+
 }

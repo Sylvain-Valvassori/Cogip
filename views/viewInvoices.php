@@ -7,7 +7,7 @@ $this->_titlePage = 'Invoices';
     $datasInvoices = '';
     foreach($invoices as $invoice ){
         $datasInvoices .= 
-            '<tr data-href="DetailInvoive?'.$invoice->id().'">
+            '<tr data-href="DetailInvoice?'.$invoice->id().'">
                 <td class="column1">'.$invoice->numbers()    .'</td>
                 <td class="column2">'.$invoice->dates()      .'</td>
                 <td class="column3">'.$invoice->societyName().'</td> 
