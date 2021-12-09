@@ -46,7 +46,7 @@ $this->_titlePage = 'Home';
         
 <h2>Welcome to the COGIP</h2>
 
-
+<?php require_once('forms.php')?>
  <!--! ====================| Section Tables |==================== -->
  <section class="tablesContainer">
         <!--* ====================| table des factures |==================== -->
