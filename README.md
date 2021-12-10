@@ -16,7 +16,10 @@
 <br/>
 <div align="center">
   <a href="#">
-    <img src="Screen site.PNG" alt="Logo">
+    <img src="home_one.png" alt="Logo">
+  </a>
+	<a href="#">
+    <img src="home_two.png" alt="Logo">
   </a>
 </div>
   <h1></h1>
