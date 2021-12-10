@@ -162,11 +162,11 @@ abstract class Model{
             $type           = $_POST['type'];
 
             if(empty($nameInvoice)){
-                $nameErrInvoice = $this->setErrorFor('societyName', 4);
+               return $nameErrInvoice = $this->setErrorFor('societyName', 4);
             } elseif($this->testInput($nameInvoice) == 'ok'){
                 $this->ok +=1;
             }else{
-                $nameErrInvoice = $this->testInput($nameInvoice);
+                return $nameErrInvoice = $this->testInput($nameInvoice);
             }
 
             if(empty($InvoiceNumbers)){

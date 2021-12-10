@@ -6,19 +6,21 @@
 // * ========================== | Setup Var |  ==========================
 :root{
     // --clr-main:        rgb(119, 137, 175);
-    --clr-main:        rgb(24, 31, 44);
-    --clr-secondary:   rgb(245, 245, 245);
-    --clr-accent:      rgb(191,138,73);
-    --clr-null:        rgb(128, 128, 128);
-    --clr-white:       rgb(255, 255, 255);
-    --clr-black:       rgb(0, 0, 0);
-    --clr-error:       rgb(209, 30, 30);
-    --clr-success:     rgb(2, 189, 2);
+    --clr-main:          rgb(21, 25, 34);
+    --clr-secondary:     rgb(226, 226, 226);
+    --clr-accent:        rgb(73, 191, 171);
+    --clr-null:          rgb(128, 128, 128);
+    --clr-white:         rgb(255, 255, 255);
+    --clr-black:         rgb(0, 0, 0);
+    --clr-error:         rgb(209, 30, 30);
+    --clr-success:       rgb(2, 189, 2);
 
-    --clr-table-th:      rgb(22, 135, 187);
+    --clr-table-th:      rgb(20, 20, 20);
     --clr-table-tr:      rgb(245, 245, 245);
-    --clr-bg-tr-hover:   rgb(209,252,228);
-    --clr-text-tr-hover: rgb(85, 85, 85);
+    --clr-bg-tr:         rgb(51, 51, 51);
+    --clr-bg-tr2:        rgb(63, 63, 63);
+    --clr-bg-tr-hover:   rgb(152, 255, 198);
+    --clr-text-tr-hover: rgb(41, 41, 41);
 
     --font-main: 'OpenSans-Regular';
     --fontS-error: 1.2em;
@@ -66,7 +68,7 @@ nav {
     }
 
     a:hover{
-        color: var( --clr-table-th);
+        color: var(--clr-accent);
     }
 }
 // * ========================== | Form |  ==========================

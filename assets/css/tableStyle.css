@@ -5,7 +5,7 @@ table {
   border-radius: 1rem;
   overflow: hidden;
   margin: 0 auto;
-  max-width: 100rem;
+  width: 80rem;
 }
 
 .tableHead th {
@@ -29,19 +29,21 @@ table :is(td, th) {
 }
 
 tbody tr:nth-child(even) {
-  background-color: var(--clr-secondary);
+  background-color: var(--clr-bg-tr2);
 }
 
 tbody tr {
   font-family: var(--font-main);
   font-size: 1.5em;
-  color: var(--clr-null);
+  color: var(--clr-white);
+  background-color: var(--clr-bg-tr);
   line-height: 1.2;
   font-weight: unset;
   cursor: pointer;
 }
 
 tbody tr:hover {
+  font-weight: bold;
   color: var(--clr-text-tr-hover);
   background-color: var(--clr-bg-tr-hover);
 }
