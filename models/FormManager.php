@@ -9,8 +9,6 @@ class FormManager extends Model{
         $this->FormSociety();
         
     }
-
-    
 }
 
 

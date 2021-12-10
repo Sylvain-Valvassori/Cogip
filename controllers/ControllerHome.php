@@ -19,7 +19,7 @@ class ControllerHome {
         }
     }
 
-    //  //* ==========| Home |==========
+    //* ==========| Home |==========
     private function home(){
 
         //* ==========| Contacts |==========
@@ -43,8 +43,6 @@ class ControllerHome {
         // getSocieties() c'est la méthode extand dans le datasManager
         $form = $this->_formManager->getForm();
 
-
-     
         //* ==========| Home datas |==========
         $this->_view = new View('Home');
         $this->_view->generate(array(
@@ -54,5 +52,7 @@ class ControllerHome {
             'form'      => $form
         ));
     }
+
+    
 }
 
