@@ -2,14 +2,14 @@
 <!-- //* ====================| Section Formulaire |==================== -->
 <section class="formContainer">
     <!-- //! ====================| Form des factures |==================== -->
-    <form class="invoiceForm" action="index.php" method="post">
+    <form class="invoiceForm" action="Home" method="post">
         <h3>Add a new invoice</h3>
         <input name='society'    type="text" placeholder="Company name">
         <?= isset($nameErrInvoice) ? $nameErrInvoice : null; ?>
         <input name='numbers' type="text" placeholder="Invoice numbers">
-        <?= isset($numbersErr) ? $numbersErr : null; ?>
+        <?= isset($numbersErr)     ? $numbersErr : null; ?>
         <input name='dates'   type="date" placeholder="Date">
-        <?= isset($datesErr) ? $datesErr : null; ?>
+        <?= isset($datesErr)       ? $datesErr : null; ?>
         <select name="type">
             <option value=""  selected>Type</option>
             <option value="client"    >Client</option>
@@ -18,22 +18,19 @@
         <?= isset($typeErrInvoice) ? $typeErrInvoice : null; ?>
         <input name='submitInvoice' type="submit" value="ADD">
     </form>
-    <?= $successInvoiceForm; ?>
+    <!-- <?= $successInvoiceForm; ?> -->
 
 
 
     <!-- //! ====================| Form des sociétés |==================== -->
-    <form class="societyForm" action="index.php" method="post">
+    <form class="societyForm" action="Home" method="post">
         <h3>Add a new company</h3>
         <input name='name'    type="text" placeholder="Company name">
         <?= isset($nameErrCompany) ? $nameErrCompany : null; ?>
-
         <input name='vat'     type="text" placeholder="VAT numbers">
-        <?= isset($vatErr) ? $vatErr : null; ?>
-
+        <?= isset($vatErr)         ? $vatErr : null; ?>
         <input name='country' type="text" placeholder="Country">
-        <?= isset($countryErr) ? $countryErr : null; ?>
-
+        <?= isset($countryErr)     ? $countryErr : null; ?>
         <select name="type">
             <option value="" selected>Type</option>
             <option value="client"    >Client</option>
@@ -43,24 +40,24 @@
         
         <input name='submitCompany'  type="submit" value="ADD">
     </form>
-    <?= $successSocietyForm; ?>
+    <!-- <?= $successSocietyForm; ?> -->
 
 
 
     <!-- //! ====================| Form des contacts |==================== -->
-    <form class="contactForm" action="index.php" method="post">
+    <form class="contactForm" action="Home" method="post">
         <h3>Add a new contact</h3>
         <input name='lastName'  type="text"  placeholder="Last name">
-        <?= isset($lastNameErr) ? $lastNameErr : null; ?>
+        <?= isset($lastNameErr)  ? $lastNameErr : null; ?>
         <input name='firstName' type="text"  placeholder="First name">
         <?= isset($firstNameErr) ? $firstNameErr : null; ?>
         <input name='phone'     type="text"  placeholder="Phone number">
-        <?= isset($phoneErr) ? $phoneErr : null; ?>
+        <?= isset($phoneErr)     ? $phoneErr : null; ?>
         <input name='email'     type="email" placeholder="Address mail"> 
-        <?= isset($emailErr) ? $emailErr : null; ?>
+        <?= isset($emailErr)     ? $emailErr : null; ?>
         <input name='society'   type="text" placeholder="Company name"> 
-        <?= isset($societyErr) ? $societyErr : null; ?>
+        <?= isset($societyErr)   ? $societyErr : null; ?>
         <input name='submitContact' type="submit" value="ADD">
     </form>
-    <?= $successContactForm; ?>
+    <!-- <?= $successContactForm; ?> -->
 </section>
