@@ -12,17 +12,7 @@
 </p>
 
 
-<!-- PROJECT LOGO -->
-<br/>
-<div align="center">
-  <a href="#">
-    <img src="home_one.png" alt="Logo">
-  </a>
-	<a href="#">
-    <img src="home_two.png" alt="Logo">
-  </a>
-</div>
-  <h1></h1>
+
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -92,9 +82,19 @@ When you select an item, it displays a new page with all the data concerning the
 
 **The second:**<br/> 
 This is when the administrator logs in, special options appear. He has the possibility to add, modify and delete data.
+<!-- PROJECT LOGO -->
+<br/>
+<div align="center">
+  <a href="#">
+    <img src="home_one.png" alt="Logo">
+  </a>
+	<a href="#">
+    <img src="home_two.png" alt="Logo">
+  </a>
+</div>
+  <h1></h1>
 
-
-<p align="right">(<a href="#top">Back to top</a>)</p>
+<p align="center">:point_up:&nbsp; <a href="#top">Back to top</a></p>
 
 
 
