@@ -3,15 +3,15 @@
 <div id="top"></div>
 
 <h1 align="center">Cogip</h1>
+
 <p align="center">
-<img width="auto" height="auto" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="GitHub's views"/>
-<img width="auto" height="auto" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="GitHub's views"/>
-<img width="auto" height="auto" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="GitHub's views"/>
-<img width="auto" height="auto" src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="GitHub's views"/>
-<img width="auto" height="auto" src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" alt="GitHub's views"/>
+ <img  src="https://img.shields.io/badge/JavaScript-black?style=for-the-badge&logo=javascript&logoColor=white" alt="GitHub Streak">
+ <img  src="https://img.shields.io/badge/HTML5-black?style=for-the-badge&logo=html5&logoColor=white" alt="GitHub Streak">
+ <img  src="https://img.shields.io/badge/CSS3-black?style=for-the-badge&logo=css3&logoColor=white" alt="GitHub Streak">
+ <img  src="https://img.shields.io/badge/Sass-black?style=for-the-badge&logo=sass&logoColor=white" alt="GitHub Streak">
+ <img src="https://img.shields.io/badge/PHP-black?style=for-the-badge&logo=php&logoColor=white" alt="GitHub Streak">
+ <img src="https://img.shields.io/badge/MySQL-black?style=for-the-badge&logo=mysql&logoColor=white" alt="GitHub Streak">
 </p>
-
-
 
 
 <!-- TABLE OF CONTENTS -->
